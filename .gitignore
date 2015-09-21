@@ -1,0 +1,9 @@
+# Ignore latexmk temporary files
+*.aux
+*.fls
+*.log
+*.out
+*_latexmk
+
+# Don't commit compiled PDF
+*.pdf

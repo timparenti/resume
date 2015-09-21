@@ -1,0 +1,284 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.75in, left=1.5in]{geometry}
+\usepackage{iftex}
+
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{metalogo}
+\usepackage{changepage}
+\pagenumbering{gobble}
+
+\ifPDFTeX
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+\else
+
+\usepackage{fontspec}
+\setmainfont{FRABK.TTF}[
+	Path = fonts/franklin-gothic/,
+	ItalicFont = FRABKIT.TTF,
+	BoldFont = FRAMD.TTF,
+	BoldItalicFont = FRAMDIT.TTF,
+	FontFace = {db}{n}{ Font = FRADM.TTF },
+	FontFace = {db}{i}{ Font = FRADMIT.TTF }
+]
+\setsansfont{CGOR45W.TTF}[
+	Path = fonts/cg-omega/,
+	ItalicFont=CGOR46W.TTF,
+	BoldFont=CGOR65W.TTF,
+	BoldItalicFont=CGOR66W.TTF
+]
+\setmonofont{CONSOLA.TTF}[
+	Path = fonts/consolas/,
+	ItalicFont=CONSOLAI.TTF,
+	BoldFont=CONSOLAB.TTF,
+	BoldItalicFont=CONSOLAZ.TTF
+]
+\newcommand{\lmr}{\fontfamily{lmr}\selectfont} % Latin Modern Roman
+\newcommand{\lmss}{\fontfamily{lmss}\selectfont} % Latin Modern Sans
+\newcommand{\lmtt}{\fontfamily{lmtt}\selectfont} % Latin Modern Mono
+
+\fi
+
+% http://tex.stackexchange.com/a/1315/10906
+\usepackage{titlesec}
+\titleformat{\section}[leftmargin]
+	{\normalfont\sffamily}
+	{}{0pt}{}
+	\titlespacing{\section}
+	{4pc}{1.5ex plus .1ex minus .2ex}{2pc}
+
+% http://tex.stackexchange.com/a/29594/10906
+\usepackage{titling}
+\setlength{\droptitle}{-8ex}
+\renewcommand{\maketitlehookd}{\vspace*{-12ex}}
+
+% http://tex.stackexchange.com/a/27804/10906
+\setlength\parindent{0pt}
+
+\usepackage{enumitem}
+    \setlist{nolistsep, nosep, topsep=0pt}
+\setlength{\parskip}{0.5ex}
+
+\newcommand{\present}{\phantom{Xxx 20XX}}
+% Vertical spacing fix - http://tex.stackexchange.com/a/256725/10906
+\newcommand{\itemizeonly}{\leavevmode\par\vspace{\dimexpr-\baselineskip-\parskip}}
+
+%\usepackage{draftwatermark}
+%\SetWatermarkText{DRAFT}
+%\SetWatermarkScale{1}
+
+
+
+\begin{document}
+
+\begin{adjustwidth}{-1in}{0pt}
+	\textsf{\Huge{Timothy J Parenti}} \hfill timparenti@gmail.com \par
+	\hrulefill
+\end{adjustwidth}
+
+
+
+\section{Education}
+
+\fontseries{db}\selectfont
+Master of Science (degree candidate), Computer Science
+	\hfill Aug 2012 -- \present \\
+\normalfont
+\textbf{University of Pittsburgh, Kenneth P Dietrich School of Arts and Sciences}
+\begin{itemize}
+	\item Project under development; anticipated degree completion Dec 2016
+\end{itemize}
+
+\fontseries{db}\selectfont
+Postbaccalaureate study, Computer Science
+	\hfill Aug 2011 -- Aug 2012 \\
+\normalfont
+\textbf{University of Pittsburgh, Kenneth P Dietrich School of Arts and Sciences}
+
+\fontseries{db}\selectfont
+Bachelor of Science in Engineering, Chemical Engineering
+	\hfill Aug 2006 -- Dec 2010 \\
+\normalfont
+\textbf{University of Pittsburgh, John A Swanson School of Engineering}
+\begin{itemize}
+	\item Graduated with \emph{cum laude} honors
+	\item Earned certificate in Nuclear Engineering and minor in Music
+\end{itemize}
+
+
+
+\section{Professional \\ Experience}
+
+\fontseries{db}\selectfont
+Part-Time Faculty
+	\hfill Jan 2013 -- Apr 2015 \\
+\normalfont
+\textbf{University of Pittsburgh, Dept of Computer Science}
+\begin{itemize}
+	\item \textbf{Courses and Roles:}
+		\begin{itemize}
+			\item Recitation instructor, CS 0447, ``Computer Organization and Assembly Language'';
+				Spring 2015, Fall 2014
+			\item Recitation instructor, CS 1501, ``Algorithm Implementation'';
+				Spring 2014, Fall 2013
+			\item Primary instructor, CS 0131, ``Software for Personal Computing'';
+				Spring 2013
+		\end{itemize}
+	\item \textbf{Accomplishments:}
+		\begin{itemize}
+			\item Received very positive teaching assessments from students,
+				including an Overall Teaching Effectiveness rating of 4.73 out of 5
+				(96th percentile) for CS 0447
+			\item Maintained a positive and encouraging learning environment
+				with over 7,800 total instructional minutes in the classroom
+		\end{itemize}
+	\item \textbf{Responsibilities:}
+		\begin{itemize}
+			\item Prepared and conducted self-developed lectures,
+				both as a primary instructor and as a substitute lecturer
+			\item Developed course materials, including a full curriculum
+				covering intermediate topics for non-majors
+				and various materials for upper-level and major courses,
+				such as assignments and quizzes, updates to existing assignments,
+				and new project rubrics
+			\item Graded and evaluated significant bodies of student work
+				for classes as large as 125, providing fair and consistent feedback
+			\item Held weekly office hours and answered student emails
+		\end{itemize}
+\end{itemize}
+
+\fontseries{db}\selectfont
+Undergraduate Teaching Assistant / Grader
+	\hfill Jan 2010 -- May 2010 \\
+\normalfont
+\textbf{University of Pittsburgh, Dept of Mechanical Engineering and Materials Science}
+\begin{itemize}
+	\item ENGR 1701, "Fundamentals of Nuclear Reactors"; Spring 2010
+\end{itemize}
+
+
+
+\section{Leadership \\ Experience}
+
+\fontseries{db}\selectfont
+President, Pitt Computer Science Graduate Student Organization
+	\hfill May 2013 -- Apr 2015
+\normalfont
+\begin{itemize}
+	\item Organized 4 large annual social events for department of 100 students
+	\item Developed graduate course curriculum and policies with input from faculty
+	\item Documented strategies and procedures for future executive boards
+	\item Served as representative to Kenneth P Dietrich School of Arts and Sciences
+		Graduate Student Organization
+	\item Committee work including restructuring of \$18,000 academic travel grant program
+		and preparation of \$45,000 budget
+	\item Represented 1,400 students in 33 academic departments as delegate to
+		University-wide Graduate and Professional Student Government
+\end{itemize}
+
+\pagebreak
+
+\fontseries{db}\selectfont
+Administrator, Carnegie Mellon University Computer Club
+	\hfill Mar 2014 -- \present
+\normalfont
+\begin{itemize}
+	\item Organize weekly technical talk series, solicit speakers, produce posters and flyers
+	\item Maintain internal services and implement resource management policies
+	\item Manage public website and online presence
+\end{itemize}
+
+\fontseries{db}\selectfont
+Treasurer, Pitt Band Alumni Council
+	\hfill Jul 2012 -- \present
+\normalfont
+\begin{itemize}
+	\item Manage financial accounts and track physical assets
+		for non-profit organization with \$14,000 annual revenue
+	\item Coordinate event-day finances for alumni events with 100--150 attendees
+\end{itemize}
+
+\fontseries{db}\selectfont
+Camp Counselor / Web Manager, Lambec Music Camp
+	\hfill Jul 2007 -- \present
+\normalfont
+\begin{itemize}
+	\item Oversee groups of 10--15 campers aged 9--18 at a week-long summer youth camp of 130 campers
+	\item Assist in musical rehearsals, especially with the youngest musicians
+	\item Manage and administer public website and online presence
+\end{itemize}
+
+\fontseries{db}\selectfont
+Section Leader / Web Manager, Heinz Chapel Choir
+	\hfill Aug 2006 -- May 2010
+\normalfont
+
+\fontseries{db}\selectfont
+Squad Leader / Web Manager, University of Pittsburgh Bands
+	\hfill Aug 2006 -- May 2010
+\normalfont
+
+
+
+\section{Technical \\ Contributions}
+
+\fontseries{db}\selectfont
+IANA Time Zone Database (tz)
+	\hfill Mar 2011 -- \present
+\normalfont
+\begin{itemize}
+	\item Provided patch to database allowing implementation of Jun 2015 leap second
+	\item Implemented Russian 2014 time zone changes,
+		including significant improvements to commentary
+	\item Black-box testing and defect reporting for \texttt{zic} and \texttt{zdump} tools
+\end{itemize}
+
+\fontseries{db}\selectfont
+Time Zone Data Distribution Service (tzdist) Working Group, IETF
+	\hfill Aug 2014 -- \present
+\normalfont
+\begin{itemize}
+	\item Contribute to design of \texttt{tzdist-service} protocol (Proposed Standard, Jul 2015)
+	\item Participate in international remote meetings related to specification
+\end{itemize}
+
+
+
+\section{Technical Skills}
+
+\itemizeonly
+\begin{itemize}
+	\item \textbf{Languages:} Java, Python, C, bash, MIPS assembly, PHP, MySQL, HTML/XML, CSS/LESS,
+		\LaTeX, JavaScript (including jQuery), Rust
+	\item \textbf{Tools:} git (including Github), vim, AFS, sed, make, pip, Apache
+	\item \textbf{Systems:} Windows (including cygwin), Debian, Ubuntu
+	\item \textbf{Certification:} Engineer in Training (Chemical), Commonwealth of Pennsylvania
+		% \hfill May 2011
+\end{itemize}
+
+
+
+\section{Community \\ Involvement}
+
+\itemizeonly
+\begin{itemize}
+	\item Event-Day Staff, DevOpsDays Pittsburgh Conference
+		\hfill Aug 2015 -- \present
+	\item Member, Pittsburgh Code \& Supply
+		\hfill Jan 2015 -- \present
+	\item Web Manager, Rice Avenue Community Public Library
+		\hfill Dec 2005 -- \present
+\end{itemize}
+
+
+
+\begin{adjustwidth}{-1in}{0pt}
+  \hrulefill \par
+  \hypersetup{linkcolor=gray}
+  \small
+  \url{http://www.linkedin.com/in/timparenti} \hfill {\lmr Compiled with \XeLaTeX} | \textbf{20 Sep 2015}
+\end{adjustwidth}
+
+
+
+\end{document}
