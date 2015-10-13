@@ -5,5 +5,6 @@
 *.out
 *_latexmk
 
-# Don't commit compiled PDF
+# Don't commit compiled PDFs, or any archived versions
 *.pdf
+archive/
