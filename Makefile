@@ -9,7 +9,7 @@ archive:	resume.pdf
 	cp -a resume.pdf archive/${DATE}_${TAG}_resume.pdf
 
 clean_tex:
-	rm -f *.aux *.fls *.log *.out *_latexmk
+	rm -f *.aux *.fls *.log *.out *.xdv *_latexmk
 clean:
 	rm -f resume.pdf
 

@@ -3,6 +3,7 @@
 *.fls
 *.log
 *.out
+*.xdv
 *_latexmk
 
 # Don't commit compiled PDFs, or any archived versions
