@@ -60,6 +60,8 @@
 \usepackage{enumitem}
 	\setlist{nolistsep, nosep, topsep=0pt}
 \setlength{\parskip}{0.5ex}
+% https://tex.stackexchange.com/a/19894/10906
+\renewcommand{\labelitemiii}{$\circ$}
 
 \newcommand{\present}{\phantom{Xxx 20XX}}
 % Vertical spacing fix - http://tex.stackexchange.com/a/256725/10906
@@ -80,26 +82,6 @@
 
 
 
-\section{Education}
-
-\textdb{
-Postbaccalaureate and graduate study, Computer Science
-	\\
-}
-\textbf{University of Pittsburgh, Kenneth P Dietrich School of Arts and Sciences}
-
-\textdb{
-Bachelor of Science in Engineering, Chemical Engineering
-	\\
-}
-\textbf{University of Pittsburgh, John A Swanson School of Engineering}
-\begin{itemize}
-	\item Graduated with \emph{cum laude} honors
-	\item Earned certificate in Nuclear Engineering and minor in Music
-\end{itemize}
-
-
-
 \section{Professional\\ Experience}
 
 \textdb{
@@ -116,23 +98,49 @@ Systems Architecture Consultant
 }
 \textbf{Carnegie Mellon University; Integrative Design, Arts and Technology Network (IDeATe)}
 \begin{itemize}
-	\item Planned migration from \emph{ad hoc} third-party services
+	\item Designed, architected, and developed ACLMAN,
+		a Python middleware suite for automated
+		access control and privilege management
+		for an undergraduate network of 1,650 students
+		\begin{itemize}
+			\item Consumption and consolidation of data from campus providers, \emph{e.g.,}
+				class rosters and enrollment data from Enrollment Services office,
+				safety training records from Environmental Health and Safety office
+			\item Tight integration of business logic with multiple APIs, \emph{e.g.,}
+				CS~Gold card access lists,
+				Grouper- and AD-based authorization groups,
+				local and third-party permissions databases
+		\end{itemize}
+	\item Enhanced user experience of Quartermaster,
+		an equipment library management system,
+		for patrons, operators, and administrators
+		\begin{itemize}
+			\item Implemented self-service online renewals
+				and ``rapid return'' functionality
+			\item Improved data integrity by collaborating on
+				changes to practices and procedures
+		\end{itemize}
+	\item Led both technical and policy sides of
+		successful 2022 expansion of equipment lending operation
+		to serve the entire campus community
+		of 14,500 students
+		\begin{itemize}
+			\item Identified architectural limitations
+				and proposed procedural workarounds
+			\item Planned unification of disparate
+				equipment library management systems
+		\end{itemize}
+	\item Migrated early \emph{ad hoc} third-party services
 		to centrally hosted applications
 		integrating with existing campus infrastructure
-	\item Implemented web hosting, mail handling, and issue tracking solutions
-	\item Designed and developed a Ruby on Rails web application for resource management
-		\begin{itemize}
-			\item Tight integration with existing campus infrastructure, \emph{e.g.,}
-				Shibboleth authentication,
-				LDAP-based user attribute synchronization,
-				Grouper-based authorization
-			\item Consumption and consolidation of data from multiple providers, \emph{e.g.,}
-				25Live,
-				Campus Card Office,
-				Environmental Health and Safety office
-		\end{itemize}
-	\item Coordinated with multiple stakeholders
-		to ensure smooth transition of production services
+	\item Designed hardware and OS lifecycling procedures,
+		managing a \$60,000 annual budget
+	\item Operated web hosting, mail handling,
+		room scheduling, and issue tracking solutions
+	\item Administered circulating fleets of Mac and PC laptops
+	\item Coordinated with faculty, legal, and central computing stakeholders
+		to ensure availability of licensed software and computing resources
+		and smooth transition of production services
 \end{itemize}
 
 \textdb{
@@ -198,13 +206,12 @@ Time Zone Data Distribution Service (\texttt{tzdist}) working group,
 
 \itemizeonly
 \begin{description}
-	\item[\textdb{Languages:}] Python, bash, Ruby (including the Ruby on Rails framework), PHP, MySQL,
-		HTML/XML, CSS/LESS, JavaScript (including jQuery), JSON,
-		\LaTeX, Java, C, MIPS assembly, Rust
-	\item[\textdb{Tools:}] git (including Github), vim, Apache, exim4, osTicket,
-		SCCM, GPMC, ADUC, Shibboleth (SP and IdP),
-		LDAP, Grouper, AFS, WordPress, ESXi, make, sed
-	\item[\textdb{Systems:}] Debian, Windows (including cygwin), macOS, Ubuntu
+	\item[\textdb{Languages:}] Python, bash, PHP, MySQL, HTML/XML, YAML, JSON,
+		JavaScript/jQuery, CSS, \LaTeX, Ruby/Rails, Java, C
+	\item[\textdb{Tools:}] git/Github, vim, Apache,
+		Jamf~Pro, SCCM, GPMC/ADUC, Grouper, LDAP, make,
+		Shibboleth (SP and IdP), AFS, WordPress, exim4, osTicket
+	\item[\textdb{Systems:}] Debian, Windows (including WSL), macOS, Ubuntu
 \end{description}
 
 
@@ -230,6 +237,26 @@ Treasurer,
 	\item Manage financial accounts and physical assets
 		for non-profit with \$14,000 annual revenue
 	\item Coordinate event-day finances and logistics for alumni events with 100--150 attendees
+\end{itemize}
+
+
+
+\section{Education}
+
+\textdb{
+Postbaccalaureate and graduate study, Computer Science
+	\\
+}
+\textbf{University of Pittsburgh, Kenneth P Dietrich School of Arts and Sciences}
+
+\textdb{
+Bachelor of Science in Engineering, Chemical Engineering
+	\\
+}
+\textbf{University of Pittsburgh, John A Swanson School of Engineering}
+\begin{itemize}
+	\item Graduated with \emph{cum laude} honors
+	\item Earned certificate in Nuclear Engineering and minor in Music
 \end{itemize}
 
 
@@ -260,7 +287,7 @@ Member,
 	\hrulefill \par
 	\hypersetup{linkcolor=gray}
 	\small
-	\url{https://www.linkedin.com/in/timparenti/} \hfill {\lmr Compiled with \XeLaTeX} | \textbf{21 Oct 2023}
+	\url{https://www.linkedin.com/in/timparenti/} \hfill {\lmr Compiled with \XeLaTeX} | \textbf{28 Oct 2023}
 \end{adjustwidth}
 
 
